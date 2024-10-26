@@ -5,7 +5,8 @@
 extern "C" {
 #endif
 
-#define PRINT_BUF_MAX_LENGTH 128
+#define LOG_BUF_MAX_LENGTH 128
+#define USE_DMA_THOL 16
 
 void lv_log_binding_uart(void);
 void U_LOG(const char * fmt, ...);

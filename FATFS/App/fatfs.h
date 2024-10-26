@@ -28,6 +28,7 @@
 #include "sd_diskio.h" /* defines SD_Driver as external */
 
 /* USER CODE BEGIN Includes */
+#include "debug.h"
 
 /* USER CODE END Includes */
 
@@ -39,6 +40,9 @@ extern FIL SDFile; /* File object for SD */
 void MX_FATFS_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+extern const char *Fs_ErrorCode[];
+extern void FS_Ready(void);
+extern void FS_ListPath(TCHAR* path);
 
 /* USER CODE END Prototypes */
 #ifdef __cplusplus

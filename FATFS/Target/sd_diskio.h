@@ -25,6 +25,7 @@
 
 /* USER CODE BEGIN firstSection */
 /* can be used to modify / undefine following code or add new definitions */
+#include "ff_gen_drv.h"
 /* USER CODE END firstSection */
 
 /* Includes ------------------------------------------------------------------*/
@@ -36,6 +37,9 @@ extern const Diskio_drvTypeDef  SD_Driver;
 
 /* USER CODE BEGIN lastSection */
 /* can be used to modify / undefine previous code or add new definitions */
+// An highlighted block
+void BSP_SD_WriteCpltCallback(void);
+void BSP_SD_ReadCpltCallback(void);
 /* USER CODE END lastSection */
 
 #endif /* __SD_DISKIO_H */

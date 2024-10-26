@@ -26,6 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lvgl.h"
+#include "fatfs.h"
+#include "gpio.h"
 
 /* USER CODE END Includes */
 
@@ -151,7 +153,10 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    LED_OFF;
+    osDelay(500);
+    LED_ON;
+    osDelay(500);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -167,6 +172,7 @@ void lvgl_app(void const * argument)
 {
   /* USER CODE BEGIN lvgl_app */
   /* Infinite loop */
+    FS_ListPath("/");
 	lv_init();	
 	lv_port_disp_init();
 	lv_port_indev_init();

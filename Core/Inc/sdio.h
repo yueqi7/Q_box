@@ -41,7 +41,7 @@ extern SD_HandleTypeDef hsd;
 void MX_SDIO_SD_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-void Log_SD_CardInfo(void);
+void Check_SD_Info(void);
 
 /* USER CODE END Prototypes */
 

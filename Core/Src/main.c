@@ -20,6 +20,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
+#include "dma.h"
 #include "fatfs.h"
 #include "i2c.h"
 #include "sdio.h"
@@ -92,11 +93,11 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-  MX_USART1_UART_Init();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_SDIO_SD_Init();
   MX_SPI1_Init();
@@ -105,10 +106,11 @@ int main(void)
   MX_FATFS_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  lv_log_binding_uart();
   Lcd_Init();
   CST816_Init();
-  U_LOG("Hardware Init Finished.");
+  Check_SD_Info();
+  FS_Ready();
+  lv_log_binding_uart();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in cmsis_os2.c) */

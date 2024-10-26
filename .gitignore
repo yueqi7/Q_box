@@ -1,2 +1,4 @@
 .vscode
-MDK_ARM\Q_box\*.*
+MDK-ARM/Q_box/*.*
+MDK-ARM/JLinkLog.txt
+MDK-ARM/Q_box.uvguix.*
