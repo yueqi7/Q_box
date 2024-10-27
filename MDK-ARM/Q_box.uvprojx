@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx,LV_CONF_INCLUDE_SIMPLE,LV_LVGL_H_INCLUDE_SIMPLE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Drivers/USERS;../lvgl;../lvgl/examples/porting</IncludePath>
+              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Drivers/USERS;../lvgl;../lvgl/examples/porting;..\..\box_ui\box_ui\src\ui</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2161,6 +2161,31 @@
               <FileName>lv_conf.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\lvgl\lv_conf.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ui</GroupName>
+          <Files>
+            <File>
+              <FileName>images.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\box_ui\src\ui\images.c</FilePath>
+            </File>
+            <File>
+              <FileName>screens.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\box_ui\src\ui\screens.c</FilePath>
+            </File>
+            <File>
+              <FileName>styles.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\box_ui\src\ui\styles.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\box_ui\src\ui\ui.c</FilePath>
             </File>
           </Files>
         </Group>

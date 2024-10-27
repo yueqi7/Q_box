@@ -28,6 +28,7 @@
 #include "lvgl.h"
 #include "fatfs.h"
 #include "gpio.h"
+#include "ui.h"
 
 /* USER CODE END Includes */
 
@@ -177,7 +178,7 @@ void lvgl_app(void const * argument)
 	lv_port_disp_init();
 	lv_port_indev_init();
 	
-	lv_demo_benchmark();
+	ui_init();
 	
 	for(;;)
 	{
